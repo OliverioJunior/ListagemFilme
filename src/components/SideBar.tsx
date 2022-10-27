@@ -1,10 +1,6 @@
+import { GenreResponseProps } from '../@types/GenreReponseProps';
 import { Button } from './Button';
 
-export interface GenreResponseProps {
-  id: number;
-  name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
-  title: string;
-}
 interface SideBarProps {
   genres: GenreResponseProps[];
   handleClickButton: (id: number) => void;
