@@ -1,5 +1,6 @@
 import { GenreResponseProps } from '../@types/GenreReponseProps';
 import { MovieProps } from '../@types/MovieProps';
+import { Header } from './Header';
 import { MovieCard } from './MovieCard';
 
 interface ContentProps {
@@ -9,11 +10,11 @@ interface ContentProps {
 export const Content: React.FC<ContentProps> = ({ selectedGenre, movies }) => {
   return (
     <div className="container">
-      <header>
+      <Header>
         <span className="category">
           Categoria:<span> {selectedGenre.title}</span>
         </span>
-      </header>
+      </Header>
 
       <main>
         <div className="movies-list">
